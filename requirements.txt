@@ -1,0 +1,12 @@
+# This file may be used to create an environment using: (still needs to be tested)
+# $ conda create --name <env> --file <this file>
+# platform: linux-64
+lightning=2.0.2
+matplotlib=3.7.1
+numpy=1.23.5
+python=3.10.10
+pytorch=2.0.0
+pytorch-lightning=2.0.2
+torchvision=0.15.0
+tqdm=4.65.0
+wandb=0.14.0
