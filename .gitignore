@@ -2,9 +2,9 @@
 .vscode/*
 data/*
 runs/*
-**/wandb/*
+hamdeq/HopDEQ/*
+hamdeq/wandb/*
 **/__pycache__/*
-
 
 # EXTENSIONS
 *.pt
@@ -55,5 +55,5 @@ Thumbs.db
 *.depend
 _site/
 
-#Except paper_figures folder
-!paper_figures/*
+#Except paper_figure notebooks
+!hamdeq/paper_figures/*.ipynb
