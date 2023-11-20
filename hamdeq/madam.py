@@ -1,3 +1,7 @@
+# File taken straight from https://github.com/jxbz/madam/blob/master/pytorch/optim/madam.py
+# Unlike the other files in this repo, it comes with a CC BY-NC-SA 4.0 license (see https://creativecommons.org/licenses/by-nc-sa/4.0/)
+# I do not claim any copyright on this file.
+
 import torch
 from torch.optim.optimizer import Optimizer, required  # noqa: F401
 
