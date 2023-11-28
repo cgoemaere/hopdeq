@@ -2,7 +2,7 @@
 # hamdeq
 Code for the paper "Accelerating Hierarchical Associative Memory: A Deep Equilibrium Approach", accepted at the AMHN workshop at NeurIPS, 2023.
 
-[Link to the paper](https://openreview.net/forum?id=Vmndp6HnfR)
+Link to paper: [OpenReview](https://openreview.net/forum?id=Vmndp6HnfR)  [arXiv](https://arxiv.org/abs/2311.15673)
 
 **TL;DR:**  Hierarchical Associative Memory models can be made much faster by casting them as Deep Equilibrium Models and alternating optimization between the even and the odd layers.
 
@@ -53,7 +53,7 @@ class MyDEQFunction(torch.nn.Module):
 
 Next, you can define your DEQ as follows:
 ~~~python
-from deq_core.deq import DEQ
+from hamdeq import DEQ
 from mydeqfunction import MyDEQFunction
 
 # Initial state (often chosen to be zero)
@@ -87,7 +87,7 @@ deq_kwargs  =  dict(
 * `iter`: the number of iterations the solver gets (for now, there is no early stopping)
 * `method`: how you want to calculate the gradients (options: `"backprop"` (for recurrent backprop)  & `"full_adjoint"`)
 * `damping_factor`: number between 0 and 1 to indicate how much damping should be used (0 = no damping).  
-  **Note**: if you're using the Picard solver, you'll probably need to add some damping for your DEQ to converge.
+  **Note**: for the Picard solver to converge, you'll probably need to add some damping to your DEQ (unless you're using HAMs...)
 
 **And that's all!**  
 You can now treat `deq` as if it was a regular `torch.nn.Module`, providing it with inputs and getting gradients from backpropping over it. In fact, you can even put it in a `torch.nn.Sequential` if you want!
