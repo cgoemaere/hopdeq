@@ -1,5 +1,5 @@
-# This file may be used to create an environment using: (still needs to be tested)
-# $ conda create --name <env> --file <this file>
+# This file may be used to create an environment using:
+# $ conda create --name <env_name> --file requirements.txt -c conda-forge -c pytorch
 # platform: linux-64
 lightning=2.0.2
 matplotlib=3.7.1
