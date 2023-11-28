@@ -93,8 +93,20 @@ deq_kwargs  =  dict(
 You can now treat `deq` as if it was a regular `torch.nn.Module`, providing it with inputs and getting gradients from backpropping over it. In fact, you can even put it in a `torch.nn.Sequential` if you want!
 
 ## Installation
-To be tested
+To install the repo with the exact dependencies from the paper, run this in the command line:
+```
+git clone https://github.com/cgoemaere/hamdeq
+cd hamdeq/
+conda create --name hamdeq_test_env --file requirements.txt -c conda-forge -c pytorch
+conda activate hamdeq_test_env
+python3 -c "from hamdeq import DEQ; print(DEQ)" #just a little test; should print "<class 'hamdeq.deq_core.deq.DEQ'>"
+```
 
+Next, to get the models training, run `sweep.py` as follows:
+```
+cd hamdeq/
+python3 sweep.py #prepend with 'nohup' to run the sweep in the background
+```
 ## Other DEQ frameworks (for reference)
 * PyTorch
 	* [locuslab/torchdeq: Modern Fixed Point Systems using Pytorch (github.com)](https://github.com/locuslab/torchdeq): very nicely structured DEQ framework that came out concurrently to this repo. You should probably check it out!
