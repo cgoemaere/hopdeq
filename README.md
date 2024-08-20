@@ -95,7 +95,7 @@ You can now treat `deq` as if it was a regular `torch.nn.Module`, providing it w
 ## Installation
 To install the repo with the exact dependencies from the paper, run this in the command line:
 ```
-git clone https://github.com/cgoemaere/hamdeq
+git clone -b hamdeq https://github.com/cgoemaere/hopdeq
 cd hamdeq/
 conda create --name hamdeq_test_env --file requirements.txt -c conda-forge -c pytorch
 conda activate hamdeq_test_env
