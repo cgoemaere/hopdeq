@@ -2,7 +2,7 @@
 # hamdeq
 Code for the paper "Accelerating Hierarchical Associative Memory: A Deep Equilibrium Approach", accepted at the AMHN workshop at NeurIPS, 2023.
 
-Link to paper: [OpenReview](https://openreview.net/forum?id=Vmndp6HnfR)  [arXiv](https://arxiv.org/abs/2311.15673)
+Link to paper: [OpenReview](https://openreview.net/forum?id=Vmndp6HnfR)  [arXiv](https://arxiv.org/abs/2311.15673v1)
 
 **TL;DR:**  Hierarchical Associative Memory models can be made much faster by casting them as Deep Equilibrium Models and alternating optimization between the even and the odd layers.
 
