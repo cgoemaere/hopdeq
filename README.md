@@ -2,7 +2,7 @@
 # hopdeq
 Code for the paper "Accelerating Hopfield Network Dynamics: Beyond Synchronous Updates and Forward Euler", presented at the ML-DE workshop at ECAI 2024.
 
-Link to paper: [OpenReview](https://openreview.net/forum?id=Vmndp6HnfR)  [arXiv](https://arxiv.org/abs/2311.15673)
+Link to paper: [arXiv](https://arxiv.org/abs/2311.15673v2)
 
 **TL;DR:**  Hopfield networks can be made much faster by casting them as Deep Equilibrium Models and alternating optimization between the even and the odd layers.
 
